@@ -1,0 +1,125 @@
+.introduction-container {
+  background-color: #bee3db;
+
+}
+
+
+.introduction {
+  position: relative;
+  bottom: -20px;
+  z-index: 1;
+  display: flex;
+  width: 100vw;
+  height: 30vw;
+  /* background-color: #e5e5f7; */
+  background-color: #f1f5f5;
+  opacity: 1;
+  background-image: radial-gradient(#bee3db 2px, transparent 2px), radial-gradient(#bee3db 2px, #f1f5f5 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+  border-radius: 20px;
+  box-shadow: -2px 0px 18px -5px #000;
+
+}
+
+.introduction-content {
+  align-self: center;
+  color: #00838f;
+  margin-left: 5vw;
+  width: 100vw;
+}
+
+.introduction-content h1 {
+  font-size: 1.4em;
+}
+
+.hl {
+  border-bottom: 4px solid #00838f;
+  width: 40px;
+
+}
+
+.introduction-content p {
+  font-size: 1rem;
+  margin-top: 2vh;
+}
+
+.introduction-right {
+  flex-basis: 60%;
+}
+
+.introduction-right-parallax {
+  height: 100%;
+  width: 100%;
+}
+
+
+.introduction-img-1 {
+  transform: translateY(7vh);
+  max-width: 27vw;
+  border: solid 10px #f1f5f5;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px #e3e6e6,
+    -5px -5px 10px #ffffff;
+}
+
+.introduction-content button {
+  margin-right: 2vw;
+  border-radius: 50px;
+  border: none;
+  height: 40px;
+  width: 120px;
+  background: #00838f;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.meetDrHu {
+  border-radius: 50px;
+  color: #00838f !important;
+  box-shadow: 5px 5px 10px #e3e6e6,
+    -5px -5px 10px #ffffff;
+  background: #F1F5F5 !important;
+
+}
+
+.meetDrHu:hover {
+  transition: .6s;
+  background: #F1F5F5;
+  box-shadow: inset 5px 5px 10px #e3e6e6,
+    inset -5px -5px 10px #ffffff;
+}
+
+@media only screen and (max-width: 1300px) {
+  .introduction {
+    height: 400px;
+  }
+
+  .introduction-right {
+    flex-basis: 100%;
+  }
+
+  .introduction-img-1 {
+    max-width: 400px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .introduction {
+    flex-direction: column-reverse;
+
+    height: 700px;
+  }
+
+  .introduction-content {
+    padding: 20px;
+  }
+
+  .introduction-img-1 {
+    max-width: 90vw;
+  }
+}

@@ -1,0 +1,156 @@
+.register-container {
+    margin-left: 0;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+
+}
+
+.register-main {
+    padding-top: 10%;
+    margin-left: 40vw;
+    /* margin-bottom: 20vh; */
+}
+
+.register-div {
+    max-width: 600px;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 80px;
+    border: none;
+    border-radius: 20px;
+    background: #dadbde;
+    box-shadow: 5px 5px 10px #cdced1,
+        -5px -5px 10px #e7e8eb;
+}
+
+
+.register-group {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+
+}
+
+.register-label {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
+.register-group input {
+    all: unset;
+    text-align: left;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 18px;
+    background: #dadbde;
+    box-shadow: inset 5px 5px 10px #cdced1,
+        inset -5px -5px 10px #e7e8eb;
+    font-family: FontAwesome, Arial, Helvetica, sans-serif;
+}
+
+.register-group input:focus {
+    all: unset;
+    text-align: left;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 18px;
+    background: #dadbde;
+    box-shadow: inset 5px 5px 10px #cdced1,
+        inset -5px -5px 10px #e7e8eb;
+    font-family: FontAwesome, Arial, Helvetica, sans-serif;
+}
+
+.register-button {
+    margin-top: 10px;
+    width: 10vw;
+    height: 4vh;
+    color: #00838f !important;
+    font-weight: bolder !important;
+    border: none !important;
+    background: linear-gradient(145deg, #c4c5c8, #e9eaee) !important;
+    box-shadow: 5px 5px 10px #cdced1,
+        -5px -5px 10px #e7e8eb;
+}
+
+.register-button:hover {
+    transition: .4s !important;
+    border: 1px dashed #00BFA6 !important;
+    background-color: #fff !important;
+    color: #00BFA6 !important;
+}
+
+
+.register-message-error {
+    color: red !important;
+    --bs-text-opacity: 1;
+}
+
+.register-succ-main {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    padding-top: 10%;
+    padding-bottom: 40%;
+    padding-left: 10%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./the-humble-cropped.jpg');
+    background-size: 100% 100%;
+}
+
+.register-succ-button {
+    padding: 1%;
+    font-size: larger;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+input:-webkit-autofill {
+    -webkit-background-clip: text !important;
+}
+
+@media only screen and (max-width: 1300px) {
+    .register-div {
+        max-width: 80%;
+    }
+
+    .register-button {
+
+        width: 120px;
+        height: 40px;
+
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .register-main {
+        width: 100vw;
+        margin: 0;
+    }
+
+    .register-div {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 80px;
+        border: none;
+        border-radius: 20px;
+        background: #dadbde;
+        box-shadow: 5px 5px 10px #cdced1,
+            -5px -5px 10px #e7e8eb;
+    }
+
+    .register-button {
+
+        width: 120px;
+        height: 40px;
+
+    }
+}

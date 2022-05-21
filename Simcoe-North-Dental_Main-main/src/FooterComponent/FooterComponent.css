@@ -1,0 +1,136 @@
+.FooterComponent-mask {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 30px;
+  padding-bottom: 0;
+  background-color: #00838f;
+  box-shadow: -2px 0px 18px -5px #000;
+
+}
+
+.FooterComponent-main {
+  padding: 40px;
+  display: flex;
+  width: auto;
+  background-color: #bee3db;
+  color: #00838f;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 40px;
+  border: 22px solid #00838f;
+
+  justify-content: space-around;
+
+  box-shadow: 6px 6px 12px #005a63,
+    -6px -6px 12px #0098a6;
+
+}
+
+.FooterComponent-service {
+  display: flex;
+  flex-direction: column;
+}
+
+.FooterComponent-Practice {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.FooterComponent-review {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.FooterComponent-office {
+  display: flex;
+  flex-direction: column;
+}
+
+.FooterComponent-Social {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  /* height: 4px; */
+}
+
+.icon-container {
+  padding: 6px;
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 20px 20px;
+  border-radius: 100% !important;
+  background: #00838f !important;
+  box-shadow: 6px 6px 17px #005860,
+    -6px -6px 17px #0098a6 !important;
+}
+
+
+.icon-container:hover {
+  box-shadow: inset 5px 5px 11px #00646d,
+    inset -5px -5px 11px #00a2b1 !important;
+}
+
+
+h2 {
+  font-weight: bolder;
+}
+
+.FooterComponent a {
+  all: unset;
+  cursor: pointer;
+  font-weight: lighter;
+}
+
+.icon {
+  cursor: pointer !important;
+}
+
+.FooterComponent-copyright {
+  display: flex;
+  flex-direction: row;
+  background-color: #00838f;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  padding: 10px 60px;
+  color: white;
+  font-weight: bolder;
+}
+
+.FooterComponent-copyright-img {
+  margin-left: 10px;
+  width: 30px;
+  vertical-align: middle;
+
+}
+
+.FooterComponent-for-small-screen {
+  display: block;
+}
+
+@media only screen and (max-width: 950px) {
+  .FooterComponent-Practice {
+    height: 50%;
+  }
+
+  .FooterComponent-review {
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .FooterComponent-main {
+    flex-direction: column;
+  }
+
+  .FooterComponent-main div {
+    margin-top: 20px;
+  }
+}

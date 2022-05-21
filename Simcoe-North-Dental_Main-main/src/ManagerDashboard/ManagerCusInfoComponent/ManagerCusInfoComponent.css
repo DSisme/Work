@@ -1,0 +1,8 @@
+.managercus {
+    width: fit-content !important;
+    margin: auto;
+}
+
+.dashboard-pic-word span {
+    text-transform: capitalize;
+}

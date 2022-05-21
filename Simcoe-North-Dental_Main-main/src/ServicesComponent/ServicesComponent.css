@@ -1,0 +1,92 @@
+.servicesComponent {
+  position: relative;
+  height: fit-content;
+  top: -20px;
+  background-color: #f1f5f5;
+  opacity: 1;
+  background-image: radial-gradient(#bee3db 2px, transparent 2px), radial-gradient(#bee3db 2px, #f1f5f5 2px);
+  background-size: 80px 80px;
+  background-position: 0 20, 40px 40px;
+  border-radius: 20px;
+  box-shadow: -2px 0px 18px -5px #000000;
+}
+
+.cards-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.servicesComponent .card {
+  overflow: hidden;
+  cursor: default;
+  color: #fff;
+  max-width: 30vw;
+  margin: 20px;
+  border-radius: 40px;
+  border: 10px solid #f1f5f5;
+  box-shadow: 5px 5px 10px #e3e6e6,
+    -5px -5px 10px #ffffff;
+}
+
+.servicesComponent .card-body {
+  visibility: hidden;
+  position: absolute;
+  transform: scaleY(0.1);
+  transform: translateY(-100%);
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+
+.servicesComponent .card:hover>.card-body {
+  visibility: visible;
+  transition: .6s;
+  background-color: rgba(158, 188, 182, .8);
+  transform: scaleY(1);
+}
+
+.servicesComponent .card-mask {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(248, 230, 214, 0.4);
+  top: 0;
+  left: 0;
+  justify-content: center;
+}
+
+.servicesComponent .card-mask p {
+  text-align: center;
+  align-self: center;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: rgb(242, 233, 228);
+  opacity: .6;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+@media only screen and (max-width: 1300px) {
+  .servicesComponent .card {
+    max-width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .servicesComponent .card {
+    max-width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .servicesComponent .card {
+    max-width: 100vw;
+    margin: 10px;
+  }
+
+  .servicesComponent .card-text {
+    font-size: .8rem;
+  }
+}

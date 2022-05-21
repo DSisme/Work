@@ -1,0 +1,143 @@
+.dashboard-main {
+    position: relative;
+    width: 100%;
+    margin-top: 10vh;
+}
+
+.dashboard-container {
+    margin-left: 0;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.dashboard-pic {
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.dashboard-contain {
+    display: flex;
+}
+
+.dashboard-info {
+    flex: 1;
+    border-right: 4px #bee3db solid;
+    border-radius: 20px;
+    box-shadow: 6px 6px 12px #a9cac3,
+        -6px -6px 12px #d3fcf3;
+    padding: 40px;
+
+}
+
+.dashboard-info ul li {
+    margin: 10px;
+    border-radius: 80px;
+    border: #bee3db 10px solid;
+    box-shadow: inset 6px 6px 12px #a9cac3,
+        inset -6px -6px 12px #d3fcf3;
+    padding: 0 40px;
+}
+
+.dashboard-appointment {
+    margin-left: 20px;
+    border-right: 4px #bee3db solid;
+    border-radius: 20px;
+    box-shadow: 6px 6px 12px #a9cac3,
+        -6px -6px 12px #d3fcf3;
+    padding: 40px !important;
+
+}
+
+.dashboard-info a {
+    display: block;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    border-radius: 20px;
+    width: 40%;
+    height: 8%;
+    margin-left: 30%;
+    border: #bee3db solid 10px;
+    color: #00838f !important;
+    font-weight: bolder;
+    box-shadow: 6px 6px 12px #a9cac3,
+        -6px -6px 12px #d3fcf3;
+    cursor: pointer;
+}
+
+.dashboard-info a:hover {
+    transition: .6s;
+    color: white !important;
+}
+
+
+.dashboard-appointment {
+    flex: 1;
+    padding-left: 1%;
+}
+
+.dashboard-pic-word {
+    margin: 0;
+}
+
+.goodbye {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 70vh;
+
+}
+
+.goodbye-text {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 40vw;
+    color: #00838f !important;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 6px 6px 12px #a9cac3,
+        -6px -6px 12px #d3fcf3 !important;
+    transition: box-shadow 1s !important;
+    padding-top: 30px;
+}
+
+.goodbye-text:hover {
+    box-shadow: inset 6px 6px 12px #a9cac3,
+        inset -6px -6px 12px #d3fcf3 !important;
+}
+
+.goodbye-text h1 {
+    text-transform: capitalize;
+}
+
+.logoutBtn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 10vh auto;
+}
+
+.logoutBtn button {
+    font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 200px;
+    height: 60px;
+    border: #bee3db 6px solid;
+    border-radius: 20px;
+    box-shadow: 6px 6px 12px #a9cac3,
+        -6px -6px 12px #d3fcf3
+}
+
+.logoutBtn button:hover {
+    transition: .6s;
+    color: #00838f;
+    border: #00838f 6px solid;
+    background-color: #bee3db;
+}

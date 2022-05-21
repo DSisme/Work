@@ -1,0 +1,132 @@
+.login-box {
+  border-radius: 20px;
+  border: none;
+  width: 60%;
+  text-decoration: none;
+}
+
+.login-btn {
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 50px;
+  border: none;
+  height: 40px;
+  width: 120px;
+  background: #bee3db;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 1rem;
+  box-shadow: 5px 5px 10px #b1d3cc,
+    -5px -5px 10px #cbf3ea;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+
+  box-shadow: inset 5px 5px 10px #b1d3cc,
+    inset -5px -5px 10px #cbf3ea;
+}
+
+.login-row input {
+  all: unset;
+  text-align: left;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 18px;
+  background: #bee3db;
+  box-shadow: inset 5px 5px 10px #a9cac3,
+    inset -5px -5px 10px #d3fcf3;
+  font-family: FontAwesome, Arial, Helvetica, sans-serif;
+  width: auto;
+}
+
+input:-webkit-autofill {
+  -webkit-background-clip: text;
+}
+
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.login-row {
+  margin: 20px;
+}
+
+.form-box label {
+  font-weight: bolder;
+  color: white;
+  width: 100px;
+  text-align: left;
+}
+
+.roleSelection {
+  margin: 20px 0;
+}
+
+.roleSelection select {
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+  background-color: #bee3db;
+  box-shadow: inset 6px 6px 12px #a9cac3,
+    inset -6px -6px 12px #d3fcf3;
+
+}
+
+@media only screen and (max-width: 700px) {
+  .login-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login-row input {
+    width: auto;
+  }
+
+  .roleSelection {
+    margin-left: 0;
+  }
+
+  .roleSelection label {
+    margin: auto;
+  }
+}
+
+.loggedIn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50%;
+}
+
+.loggedIn-text {
+  all: unset;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center !important;
+  text-align: center !important;
+  width: 200px;
+  height: 100px;
+  color: #00838f !important;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 6px 6px 12px #a9cac3,
+    -6px -6px 12px #d3fcf3 !important;
+  transition: box-shadow 1s !important;
+  padding-top: 10%;
+}
+
+.loggedIn-text:hover {
+  box-shadow: inset 6px 6px 12px #a9cac3,
+    inset -6px -6px 12px #d3fcf3 !important;
+}
+
+.loggedIn-text h1 {
+  text-transform: capitalize;
+}
